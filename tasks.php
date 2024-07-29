@@ -52,3 +52,16 @@ function toggleDone(string $id)
 
     return writeJson($tasks);
 }
+
+function deleteTask(string $id)
+{
+    $tasks = getTasks();
+    array_splice($tasks, $id, 1);
+
+    for ($i = 0; $i < count($tasks); $i++)
+    {
+        $tasks[$i]['id'] = $i;
+    }
+
+    return writeJson($tasks);
+}

@@ -40,7 +40,7 @@
                         >
                             <?= $task['isDone'] ? 'Undone' : 'Done' ?>
                         </a>
-                        <a class='btn btn-danger' href="">Delete</a>
+                        <a class='btn btn-danger' href="delete.php?id=<?= $task['id'] ?>">Delete</a>
                     </th>
                 </tr>
 
