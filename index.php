@@ -36,7 +36,7 @@
                     <th>
                         <a 
                             class='btn <?= $task['isDone'] ? '' : 'btn-success' ?>' 
-                            href=""
+                            href="toggleDone.php?id=<?= $task['id'] ?>"
                         >
                             <?= $task['isDone'] ? 'Undone' : 'Done' ?>
                         </a>

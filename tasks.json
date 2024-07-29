@@ -7,6 +7,11 @@
     {
         "id": 1,
         "title": "Suck a lolipop",
-        "isDone": true
+        "isDone": false
+    },
+    {
+        "id": 2,
+        "title": "banana",
+        "isDone": false
     }
 ]
